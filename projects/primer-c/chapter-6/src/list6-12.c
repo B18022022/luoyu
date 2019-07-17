@@ -24,7 +24,7 @@ int main() {
 
     for (i = 0; i < 4; i++) {
         for (j = 0; j < 3; j++) {
-            printf("矩阵的第%d行,第%d列的值：", i, j);
+            printf("矩阵的第%d行,第%d列的值：", i + 1, j + 1);
             scanf("%d", &a[i][j]);
         }
     }
@@ -35,7 +35,7 @@ int main() {
 
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 4; j++) {
-            printf("矩阵的第%d行,第%d列的值：", i, j);
+            printf("矩阵的第%d行,第%d列的值：", i + 1, j + 1);
             scanf("%d", &b[i][j]);
         }
     }
