@@ -106,6 +106,7 @@ int move(int a[][4], int *score) {
     getchar();
     char m = getchar();
     system("stty -raw");
+    int flag = 0;
 
     if (s == 'q') {
         return 1;
@@ -133,10 +134,10 @@ int move(int a[][4], int *score) {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 if (a[j][i] == a[j + 1][i]) {
+                    flag = 1;
                     a[j][i] *= 2;
                     *score += a[j][i];
                     a[j + 1][i] = 0;
-                    break;
                 }
             }
         }
@@ -152,6 +153,10 @@ int move(int a[][4], int *score) {
                         if (a[k - 1][i]) {
                             break;
                         }
+                    }
+
+                    if (k != j) {
+                        flag = 1;
                     }
 
                     a[k][i] = temp;
@@ -180,10 +185,10 @@ int move(int a[][4], int *score) {
         for (int i = 0; i < 4; i++) {
             for (int j = 3; j >= 0; j--) {
                 if (a[j][i] == a[j - 1][i]) {
+                    flag = 1;
                     a[j][i] *= 2;
                     *score += a[j][i];
                     a[j - 1][i] = 0;
-                    break;
                 }
             }
         }
@@ -199,6 +204,10 @@ int move(int a[][4], int *score) {
                         if (a[k + 1][i]) {
                             break;
                         }
+                    }
+
+                    if (k != j) {
+                        flag = 1;
                     }
 
                     a[k][i] = temp;
@@ -227,10 +236,10 @@ int move(int a[][4], int *score) {
         for (int i = 0; i < 4; i++) {
             for (int j = 3; j >= 0; j--) {
                 if (a[i][j] == a[i][j - 1]) {
+                    flag = 1;
                     a[i][j] *= 2;
                     *score += a[i][j];
                     a[i][j - 1] = 0;
-                    break;
                 }
             }
         }
@@ -249,6 +258,10 @@ int move(int a[][4], int *score) {
                     }
 
                     a[i][k] = temp;
+
+                    if (k != j) {
+                        flag = 1;
+                    }
                 }
             }
         }
@@ -276,10 +289,10 @@ int move(int a[][4], int *score) {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 if (a[i][j] == a[i][j + 1]) {
+                    flag = 1;
                     a[i][j] *= 2;
                     *score += a[i][j];
                     a[i][j + 1] = 0;
-                    break;
                 }
             }
         }
@@ -298,12 +311,19 @@ int move(int a[][4], int *score) {
                     }
 
                     a[i][k] = temp;
+
+                    if (k != j) {
+                        flag = 1;
+                    }
                 }
             }
         }
     }
 
-    input(a);
+    if (flag) {
+        input(a);
+    }
+
     system("clear");
     display(a);
     printf("\n\n\n\t\t\t\t分数:%d(三次q键退出)", *score);
