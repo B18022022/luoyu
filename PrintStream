@@ -1,0 +1,17 @@
+package com.banyuan.test04;
+
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
+public class Test {
+	public static void main(String[] args) {
+		try {
+			PrintStream ps=new PrintStream("a.txt");
+			ps.print("HelloWorld中国");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}
