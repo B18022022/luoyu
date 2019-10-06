@@ -1,0 +1,30 @@
+package com.banyuan.test04;
+
+public class Myclass {
+	StringBuffer sb = new StringBuffer();
+	public synchronized void print() {
+		if(sb.toString().equals("")) {
+			try {
+				wait();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}else {
+			String str1=sb.toString();
+			System.out.println("打印"+str1);
+			sb=new StringBuffer();
+			
+		}
+	}
+	//消费者
+	public synchronized void append() {
+		for(int i =0;i<(int)(1+(Math.random()*10));i++) {
+			char s=(char)(48+(int)(Math.random()*80));
+		sb.append(s);
+		String str = sb.toString();
+		System.out.println("append="+str);
+		notify();
+		}
+	}
+}
