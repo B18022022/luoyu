@@ -1,0 +1,37 @@
+package com.banyuan.test04;
+
+
+import com.banyuan.test04.Myclass;
+
+public class MyThread extends Thread {
+	private boolean flag;
+	private Myclass mc;
+	public MyThread(boolean flag,Myclass mc) {
+		this.flag=flag;
+		this.mc=mc;
+	}
+	public void run() {
+		while(true)
+		{
+			while(true) {
+				if(flag) {
+					try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					mc.print();
+				}else {
+					try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					mc.append();
+				}
+		}
+		}
+}
+}
