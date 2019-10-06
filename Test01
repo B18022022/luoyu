@@ -1,0 +1,17 @@
+package com.banyuan.test04;
+
+import com.banyuan.test04.Myclass;
+import com.banyuan.test04.MyThread;
+
+public class Test01 {
+public static void main(String[] args) {
+	Myclass mc = new Myclass();
+	MyThread mt1 =new MyThread(true,mc);
+	
+	MyThread mt2 =new MyThread(false,mc);
+
+	mt1.start();
+	mt2.start();
+
+}
+}
