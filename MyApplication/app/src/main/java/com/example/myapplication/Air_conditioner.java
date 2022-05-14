@@ -16,8 +16,8 @@ import java.io.IOException;
 public class Air_conditioner extends AppCompatActivity {
 
     Httpconnect httpconnect = new Httpconnect();
-    String dId = "930696317";
-    String akey = "tphOxBmiWHjyMiRQB==YzwxZIlg=";
+    String dId = "012345678";                            //请修改为你的设备ID
+    String akey = "0123456789012345678901234567";        //请修改为你的api_key
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
