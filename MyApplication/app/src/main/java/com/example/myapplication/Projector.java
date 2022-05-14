@@ -16,8 +16,8 @@ import java.io.IOException;
 public class Projector extends AppCompatActivity {
 
     Httpconnect httpconnect = new Httpconnect();
-    String dId = "931979820";
-    String akey = "LgfQyvNWQQ=TlVjH7zrXpdY1htY=";
+    String dId = "012345678";                            //请修改为你的设备ID
+    String akey = "0123456789012345678901234567";        //请修改为你的api_key
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
