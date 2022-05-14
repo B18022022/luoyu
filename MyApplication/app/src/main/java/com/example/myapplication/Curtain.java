@@ -21,8 +21,8 @@ import java.io.IOException;
 public class Curtain extends AppCompatActivity {
 
     Httpconnect httpconnect = new Httpconnect();
-    String dId = "931980897";
-    String akey = "s7CT3ofWtBo2hAK8rjfUT1zyMjs=";
+    String dId = "012345678";                            //请修改为你的设备ID
+    String akey = "0123456789012345678901234567";        //请修改为你的api_key
     boolean flag;
 
     @Override
