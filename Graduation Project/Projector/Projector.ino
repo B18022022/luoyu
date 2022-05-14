@@ -17,16 +17,16 @@ const uint16_t mqttPort = 6002;                       //目前 Onenet mqtt服务
 
 
 /*************************************** Config ********************************************************/
-#define PRODUCT_ID    "507689"                        //产品ID，需要更改为你自己创建的产品的 ID     
-#define API_KEY       "LgfQyvNWQQ=TlVjH7zrXpdY1htY="  //APIKEY，需要更改为你自己创建的产品的 APIKEY
-#define DEVICE_ID     "931979820"                     //设备ID，需要更改为你自己创建的产品的 设备ID
+#define PRODUCT_ID    "012345"                        //产品ID，需要更改为你自己创建的产品的 ID     
+#define API_KEY       "0123456789012345678901234567"  //APIKEY，需要更改为你自己创建的产品的 APIKEY
+#define DEVICE_ID     "012345678"                     //设备ID，需要更改为你自己创建的产品的 设备ID
 
 //WiFi 配置
-const char* ssid     = "luoyu";               //WiFi账号：需要修改为所处环境的WiFi 账号
-const char* password = "qq63770916";                 //WiFi密码：秘密需要修改为所处环境的WiFi 密码
+const char* ssid     = "0123456";               //WiFi账号：需要修改为所处环境的WiFi 账号
+const char* password = "0123456";                 //WiFi密码：秘密需要修改为所处环境的WiFi 密码
 
-String mykey = "cgJfC5x3gmAlEe8M";
-String birth = "1999918";
+String mykey = "0123456789012345";              //设定16字节字符串，与APP端保持一致
+String birth = "0123456";                        //设定7字节字符串，与APP端保持一致
 SoftwareSerial DLSerial(D6, D7);                      //定义软串口 RX(D6), TX(D7)
 /******************************************************************************************************/
 
