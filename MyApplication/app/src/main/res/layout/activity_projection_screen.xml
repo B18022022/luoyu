@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="7"
+    android:orientation="horizontal"
+    android:rowCount="5"
+    android:background="@drawable/bg"
+    tools:context=".Projection_screen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/projection_screen_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="7"
+        android:layout_gravity="fill"
+        android:background="#3700B3"
+        app:title="登录中..."
+        app:titleTextColor="#fff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_rowWeight="5"
+        android:layout_columnSpan="7"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:text="投影屏控制系统"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="0dp"
+        android:layout_columnWeight="10"
+        android:layout_height="0dp"
+        android:layout_rowWeight="10"
+        android:background="@drawable/button_bg_selector1"
+        android:onClick="on_click"
+        android:text="开启投影屏"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+    <Button
+        android:id="@+id/close"
+        android:layout_width="0dp"
+        android:layout_columnWeight="10"
+        android:layout_height="0dp"
+        android:layout_rowWeight="10"
+        android:background="@drawable/button_bg_selector2"
+        android:onClick="off_click"
+        android:text="关闭投影屏"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+    <Button
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_columnWeight="10"
+        android:layout_height="0dp"
+        android:layout_rowWeight="10"
+        android:background="@drawable/button_bg_selector3"
+        android:onClick="return_click"
+        android:text="返回主菜单"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+</GridLayout>

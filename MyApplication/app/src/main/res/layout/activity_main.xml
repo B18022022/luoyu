@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="9"
+    android:orientation="horizontal"
+    android:rowCount="5"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_rowWeight="5"
+        android:layout_columnSpan="9"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:text="实验室设备控制系统"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+    <Button
+        android:id="@+id/automatic_control"
+        android:layout_width="0dp"
+        android:layout_columnWeight="10"
+        android:layout_height="0dp"
+        android:layout_rowWeight="10"
+        android:layout_rowSpan="3"
+        android:background="@drawable/button_bg_selector0"
+        android:onClick="automatic_control_click"
+        android:text="自动控制"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+
+    <Button
+        android:id="@+id/air_condition"
+        android:layout_width="0dp"
+        android:layout_columnWeight="10"
+        android:layout_height="0dp"
+        android:layout_rowWeight="10"
+        android:background="@drawable/button_bg_selector1"
+        android:onClick="air_conditioner_click"
+        android:text="空调"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+
+    <Button
+        android:id="@+id/projector"
+        android:layout_width="0dp"
+        android:layout_columnWeight="10"
+        android:layout_height="0dp"
+        android:layout_rowWeight="10"
+        android:background="@drawable/button_bg_selector2"
+        android:onClick="projector_click"
+        android:text="投影机"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+
+    <Button
+        android:id="@+id/projection_screen"
+        android:layout_width="0dp"
+        android:layout_columnWeight="10"
+        android:layout_height="0dp"
+        android:layout_rowWeight="10"
+        android:background="@drawable/button_bg_selector3"
+        android:onClick="projection_screen_click"
+        android:text="投影屏"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="7"
+        android:layout_gravity="fill"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+
+    <Button
+        android:id="@+id/curtain"
+        android:layout_width="0dp"
+        android:layout_columnWeight="10"
+        android:layout_height="0dp"
+        android:layout_rowWeight="10"
+        android:background="@drawable/button_bg_selector4"
+        android:onClick="curtain_click"
+        android:text="窗帘"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+
+    <Button
+        android:id="@+id/bench_power_supply"
+        android:layout_width="0dp"
+        android:layout_columnWeight="10"
+        android:layout_height="0dp"
+        android:layout_rowWeight="10"
+        android:background="@drawable/button_bg_selector5"
+        android:onClick="bench_power_supply_click"
+        android:text="实验台电源"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+
+    <Button
+        android:id="@+id/computer"
+        android:layout_width="0dp"
+        android:layout_columnWeight="10"
+        android:layout_height="0dp"
+        android:layout_rowWeight="10"
+        android:background="@drawable/button_bg_selector6"
+        android:onClick="computer_click"
+        android:text="计算机"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        android:layout_columnSpan="9"
+        android:layout_gravity="fill"
+        />
+
+
+</GridLayout>
