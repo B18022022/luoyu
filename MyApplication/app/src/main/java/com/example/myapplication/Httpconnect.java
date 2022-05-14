@@ -24,7 +24,6 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -34,8 +33,8 @@ import java.util.Calendar;
 import java.util.TimeZone;
 
 public class Httpconnect {
-    String key = "cgJfC5x3gmAlEe8M";
-
+    String key = "0123456789012345";               //设定16字节字符串，与前端控制端保持一致
+    String bir = "0123456";                        //设定7字节字符串，与前端控制端保持一致
     byte[] mykey;
     byte[] myiv;
     {
@@ -67,7 +66,6 @@ public class Httpconnect {
                     TimeZone timeZone = now.getTimeZone();
 
                     long totalMilliseconds = System.currentTimeMillis() + timeZone.getRawOffset();
-                    String bir = "1999918";
                     String epochTime_5 = String.valueOf(totalMilliseconds / 5000);
                     String iv = bir + epochTime_5;
                     myiv = iv.getBytes("utf-8");
@@ -130,7 +128,6 @@ public class Httpconnect {
                     TimeZone timeZone = now.getTimeZone();
 
                     long totalMilliseconds = System.currentTimeMillis() + timeZone.getRawOffset();
-                    String bir = "1999918";
                     String epochTime_5 = String.valueOf(totalMilliseconds / 5000);
                     String iv = bir + epochTime_5;
                     myiv = iv.getBytes("utf-8");
@@ -192,7 +189,6 @@ public class Httpconnect {
                     TimeZone timeZone = now.getTimeZone();
 
                     long totalMilliseconds = System.currentTimeMillis() + timeZone.getRawOffset();
-                    String bir = "1999918";
                     String epochTime_5 = String.valueOf(totalMilliseconds / 5000);
                     String iv = bir + epochTime_5;
                     myiv = iv.getBytes("utf-8");
@@ -254,7 +250,6 @@ public class Httpconnect {
                     TimeZone timeZone = now.getTimeZone();
 
                     long totalMilliseconds = System.currentTimeMillis() + timeZone.getRawOffset();
-                    String bir = "1999918";
                     String epochTime_5 = String.valueOf(totalMilliseconds / 5000);
                     String iv = bir + epochTime_5;
                     myiv = iv.getBytes("utf-8");
@@ -315,7 +310,6 @@ public class Httpconnect {
                     TimeZone timeZone = now.getTimeZone();
 
                     long totalMilliseconds = System.currentTimeMillis() + timeZone.getRawOffset();
-                    String bir = "1999918";
                     String epochTime_5 = String.valueOf(totalMilliseconds / 5000);
                     String iv = bir + epochTime_5;
                     myiv = iv.getBytes("utf-8");
@@ -376,7 +370,6 @@ public class Httpconnect {
                     TimeZone timeZone = now.getTimeZone();
 
                     long totalMilliseconds = System.currentTimeMillis() + timeZone.getRawOffset();
-                    String bir = "1999918";
                     String epochTime_5 = String.valueOf(totalMilliseconds / 5000);
                     String iv = bir + epochTime_5;
                     myiv = iv.getBytes("utf-8");
@@ -437,7 +430,6 @@ public class Httpconnect {
                     TimeZone timeZone = now.getTimeZone();
 
                     long totalMilliseconds = System.currentTimeMillis() + timeZone.getRawOffset();
-                    String bir = "1999918";
                     String epochTime_5 = String.valueOf(totalMilliseconds / 5000);
                     String iv = bir + epochTime_5;
                     myiv = iv.getBytes("utf-8");
@@ -498,7 +490,6 @@ public class Httpconnect {
                     TimeZone timeZone = now.getTimeZone();
 
                     long totalMilliseconds = System.currentTimeMillis() + timeZone.getRawOffset();
-                    String bir = "1999918";
                     String epochTime_5 = String.valueOf(totalMilliseconds / 5000);
                     String iv = bir + epochTime_5;
                     myiv = iv.getBytes("utf-8");
