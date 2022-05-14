@@ -15,17 +15,17 @@ PubSubClient   mqttClient;                            //创建一个 mqtt 客户
 const char*    mqttServer = "183.230.40.39";          //目前 Onenet mqtt服务器 的 ip地址
 const uint16_t mqttPort = 6002;                       //目前 Onenet mqtt服务器 的 端口号
 /************************************ 请修改以下区域 *****************************************************/
-#define PRODUCT_ID    "507689"                        //产品ID，需要更改为你自己创建的产品的 ID     
-#define API_KEY       "s7CT3ofWtBo2hAK8rjfUT1zyMjs="  //APIKEY，需要更改为你自己创建的产品的 APIKEY
-#define DEVICE_ID     "931980897"                     //设备ID，需要更改为你自己创建的产品的 设备ID
+#define PRODUCT_ID    "012345"                        //产品ID，需要更改为你自己创建的产品的 ID     
+#define API_KEY       "0123456789012345678901234567"  //APIKEY，需要更改为你自己创建的产品的 APIKEY
+#define DEVICE_ID     "012345678"                     //设备ID，需要更改为你自己创建的产品的 设备ID
 #define STEPS 64                                      // 这里设置步进电机旋转一圈是多少步，依据步距角计算，及走一圈需要多少脉冲
 
 //WiFi 配置
-const char* ssid     = "luoyu";               //WiFi账号：需要修改为所处环境的WiFi 账号
-const char* password = "qq63770916";                 //WiFi密码：秘密需要修改为所处环境的WiFi 密码
+const char* ssid     = "0123456";               //WiFi账号：需要修改为所处环境的WiFi 账号
+const char* password = "0123456";                 //WiFi密码：秘密需要修改为所处环境的WiFi 密码
 
-String mykey = "cgJfC5x3gmAlEe8M";
-String birth = "1999918";
+String mykey = "0123456789012345";              //设定16字节字符串，与APP端保持一致
+String birth = "0123456";                       //设定7字节字符串，与APP端保持一致
 Stepper stepper(STEPS, D8, D6, D7, D5);//设置步进电机的步数和引脚（就是驱动板上IN1～IN4连接的四个数字口）分别接入D8，D7，D6，D5。
 /******************************************************************************************************/
 
