@@ -16,9 +16,9 @@ import java.io.IOException;
 public class Bench_power_supply extends AppCompatActivity {
 
     Httpconnect httpconnect = new Httpconnect();
-    String dId = "931980773";
-    String akey = "geu=5SaT4NxHDnHkqEYyVTsmh08=";
-
+    String dId = "012345678";                            //请修改为你的设备ID
+    String akey = "0123456789012345678901234567";        //请修改为你的api_key
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
